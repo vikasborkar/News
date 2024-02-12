@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_content_margine">8dp</dimen>
+    <dimen name="default_item_margine">4dp</dimen>
+    <dimen name="default_card_elevation">4dp</dimen>
+
+    <dimen name="title_font">16sp</dimen>
+    <dimen name="date_font">12sp</dimen>
+    <dimen name="article_image_size">100dp</dimen>
+
+</resources>

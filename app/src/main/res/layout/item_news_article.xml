@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:elevation="@dimen/default_card_elevation"
+    android:layout_margin="@dimen/default_item_margine"
+    app:cardCornerRadius="@dimen/default_item_margine"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="@dimen/article_image_size"
+            android:layout_height="@dimen/article_image_size"
+            android:layout_marginStart="@dimen/default_content_margine"
+            android:layout_marginTop="@dimen/default_content_margine"
+            android:layout_marginEnd="@dimen/default_content_margine"
+            android:layout_marginBottom="@dimen/default_content_margine"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_font"
+            android:layout_marginTop="@dimen/default_content_margine"
+            android:layout_marginEnd="@dimen/default_content_margine"
+            android:layout_marginBottom="@dimen/default_content_margine"
+            app:layout_constraintBottom_toTopOf="@+id/tvDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivImage"
+            android:ellipsize="end"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="SEC approves bitcoin ETFs (for real this time)" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_content_margine"
+            android:layout_marginEnd="@dimen/default_content_margine"
+            android:layout_marginBottom="@dimen/default_content_margine"
+            android:textSize="@dimen/date_font"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="right"
+            app:layout_constraintStart_toEndOf="@+id/ivImage"
+            tools:text="Today, 02.30 PM" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
